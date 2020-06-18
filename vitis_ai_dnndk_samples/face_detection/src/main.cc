@@ -207,6 +207,8 @@ void faceDetection(DPUKernel *kernel) {
         cerr << "Open camera error!" << endl;
         exit(-1);
     }
+    camera.set(CV_CAP_PROP_FRAME_WIDTH,640);
+    camera.set(CV_CAP_PROP_FRAME_HEIGHT,480);
 
     // We create three different threads to do face detection:
     // 1. Reader thread  : Read images from camera and put it to the input queue;
