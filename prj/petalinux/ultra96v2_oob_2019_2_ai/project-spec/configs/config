@@ -189,8 +189,8 @@ CONFIG_SUBSYSTEM_TFTPBOOT_DIR="/tftpboot"
 #
 # Firmware Version Configuration
 #
-CONFIG_SUBSYSTEM_HOSTNAME="ultra96v2-oob-2019-2"
-CONFIG_SUBSYSTEM_PRODUCT="ultra96v2_oob_2019_2"
+CONFIG_SUBSYSTEM_HOSTNAME="ultra96v2-oob-2019-2-ai"
+CONFIG_SUBSYSTEM_PRODUCT="ultra96v2_oob_2019_2-ai"
 CONFIG_SUBSYSTEM_FW_VERSION="1.00"
 
 #
@@ -214,7 +214,7 @@ CONFIG_YOCTO_PARALLEL_MAKE=""
 #
 # Add pre-mirror url 
 #
-CONFIG_PRE_MIRROR_URL="file:///tools/Xilinx/PetaLinux/2019.2/downloads_2019.2/downloads"
+CONFIG_PRE_MIRROR_URL="http://petalinux.xilinx.com/sswreleases/rel-v${PETALINUX_VER%%.*}/downloads"
 
 #
 # Local sstate feeds settings
@@ -223,7 +223,7 @@ CONFIG_PRE_MIRROR_URL="file:///tools/Xilinx/PetaLinux/2019.2/downloads_2019.2/do
 #
 # Default sstate feeds ${PETALINUX}/components/yocto always added
 #
-CONFIG_YOCTO_LOCAL_SSTATE_FEEDS_URL="/tools/Xilinx/PetaLinux/2019.2/sstate_aarch64_2019.2/aarch64"
+CONFIG_YOCTO_LOCAL_SSTATE_FEEDS_URL=""
 # CONFIG_YOCTO_ENABLE_DEBUG_TWEAKS is not set
 CONFIG_YOCTO_NETWORK_SSTATE_FEEDS=y
 

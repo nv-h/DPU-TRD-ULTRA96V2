@@ -2769,7 +2769,7 @@ CONFIG_packagegroup-core-boot=y
 #
 # packagegroup-core-ssh-dropbear 
 #
-CONFIG_packagegroup-core-ssh-dropbear=y
+# CONFIG_packagegroup-core-ssh-dropbear is not set
 # CONFIG_packagegroup-core-ssh-dropbear-dev is not set
 # CONFIG_packagegroup-core-ssh-dropbear-dbg is not set
 
@@ -4098,7 +4098,7 @@ CONFIG_packagegroup-petalinux-gstreamer=y
 #
 # packagegroup-petalinux-matchbox 
 #
-CONFIG_packagegroup-petalinux-matchbox=y
+# CONFIG_packagegroup-petalinux-matchbox is not set
 # CONFIG_packagegroup-petalinux-matchbox-dbg is not set
 # CONFIG_packagegroup-petalinux-matchbox-dev is not set
 
@@ -4197,7 +4197,7 @@ CONFIG_packagegroup-petalinux-v4lutils=y
 #
 # packagegroup-petalinux-x11 
 #
-CONFIG_packagegroup-petalinux-x11=y
+# CONFIG_packagegroup-petalinux-x11 is not set
 # CONFIG_packagegroup-petalinux-x11-dev is not set
 # CONFIG_packagegroup-petalinux-x11-dbg is not set
 
@@ -4211,19 +4211,19 @@ CONFIG_packagegroup-petalinux-x11=y
 #
 # Image Features
 #
-CONFIG_imagefeature-ssh-server-dropbear=y
-# CONFIG_imagefeature-ssh-server-openssh is not set
+# CONFIG_imagefeature-ssh-server-dropbear is not set
+CONFIG_imagefeature-ssh-server-openssh=y
 CONFIG_imagefeature-hwcodecs=y
 CONFIG_imagefeature-package-management=y
 CONFIG_package-feed-uris=""
-# CONFIG_imagefeature-debug-tweaks is not set
+CONFIG_imagefeature-debug-tweaks=y
 
 #
 # apps 
 #
 # CONFIG_gpio-demo is not set
+CONFIG_mnt-sd=y
 # CONFIG_peekpoke is not set
-CONFIG_sds-lib=y
 CONFIG_ultra96-radio-leds=y
 CONFIG_ultra96-wpa=y
 
@@ -4247,6 +4247,7 @@ CONFIG_opencl-headers-dev=y
 CONFIG_packagegroup-base-extended=y
 CONFIG_packagegroup-petalinux-96boards-sensors=y
 CONFIG_packagegroup-petalinux-ultra96-webapp=y
+CONFIG_packagegroup-petalinux-xlnx-ai=y
 CONFIG_python-pyserial=y
 CONFIG_python3-pip=y
 CONFIG_ultra96-ap-setup=y
