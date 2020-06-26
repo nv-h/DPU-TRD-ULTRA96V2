@@ -1,0 +1,7 @@
+vivado.*
+xcd.log
+xrc.log
+binary_container_1/*
+!binary_container_1/reports*
+packaged_kernel_dpu_xrt_top_hw_ULTRA96V2*
+tmp_kernel_pack_dpu_xrt_top_hw_ULTRA96V2*

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Design Guidance Report</title>
+<link rel="stylesheet" href="file:///opt/Xilinx/Vitis/2019.2/data/rulecheck/rulecheck.css">
+<script type="text/javascript" src="file:///opt/Xilinx/Vitis/2019.2/data/rulecheck/rulecheck.js"></script>
+</head><body>
+<center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
+<tr><td><b>Copyright</b></td><td>Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.</td></tr>
+<tr><td><b>Tool Version</b></td><td>xrcserver v.2019.2 (lin64) Build 0 </td></tr>
+<tr><td><b>Date</b></td><td>Thu Jun 18 12:52:44 2020</td></tr>
+<tr><td><b>Host</b></td><td>saido-Lin running 64-bit Ubuntu 18.04.4 LTS</td></tr>
+<tr><td><b>Command</b></td><td>v++  -t hw --platform /home/saido/sources/Avnet/vitis/platform_repo/ULTRA96V2/ULTRA96V2.xpfm --save-temps --config /home/saido/work/ultra96v2_vitis_flow_tutorial_1/DPU-TRD-ULTRA96V2/prj/Vitis/config_file/prj_config --xp param:compiler.userPostSysLinkTcl=/home/saido/work/ultra96v2_vitis_flow_tutorial_1/DPU-TRD-ULTRA96V2/prj/Vitis/strip_interconnects.tcl -l --temp_dir binary_container_1 --log_dir binary_container_1/logs --remote_ip_cache binary_container_1/ip_cache -o binary_container_1/dpu.xclbin binary_container_1/dpu.xo </td></tr>
+</table></center><br>
+<table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
+<tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
+<tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
+<tr><td><a href="#CONFIG FILE DETAILS">3 CONFIG FILE DETAILS</a></tr></td>
+<tr><td><a href="#PERFORMANCE CHECKS MET">4 PERFORMANCE CHECKS MET</a></tr></td>
+</table>
+<a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
+<pre>Violations found: 0
+</pre>
+<pre>Rule Specs Violated: 0
+</pre>
+<pre>Rules Met: 1
+</pre>
+<pre>Rule Specs Met: 1
+</pre>
+<a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
+<table border="1">
+<caption>Items that may require attention</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left">Severity</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="380">Resolution</th>
+</tr>
+</table>
+<br>
+<a name="CONFIG FILE DETAILS"></a><h1>3 CONFIG FILE DETAILS</h1>
+<pre>Config files found: 1
+</pre>
+<table border="1">
+<caption>Details of the config files</caption>
+<tr>
+<th align="left">File name</th>
+<th align="left">Contents</th>
+</tr>
+<tr>
+<td align="left">/home/saido/work/ultra96v2_vitis_flow_tutorial_1/DPU-TRD-ULTRA96V2/prj/Vitis/config_file/prj_config
+</td>
+<td align="left"># /*
+# * Copyright 2019 Xilinx Inc.
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *    http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
+
+
+[clock]
+
+id=0:dpu_xrt_top_1.aclk
+id=1:dpu_xrt_top_1.ap_clk_2
+
+[connectivity]
+
+sp=dpu_xrt_top_1.M_AXI_GP0:HPC0
+sp=dpu_xrt_top_1.M_AXI_HP0:HP0
+sp=dpu_xrt_top_1.M_AXI_HP2:HP1
+
+
+nk=dpu_xrt_top:1
+
+[advanced]
+misc=:solution_name=link
+param=compiler.addOutputTypes=sd_card
+
+#param=compiler.skipTimingCheckAndFrequencyScaling=1
+
+[vivado]
+prop=run.impl_1.strategy=Performance_Explore
+#param=place.runPartPlacer=0
+
+
+</td>
+</tr>
+</table>
+<br>
+<a name="PERFORMANCE CHECKS MET"></a><h1>4 PERFORMANCE CHECKS MET</h1>
+<table border="1">
+<caption>Items that offer design performance insight</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left">Actual</th>
+<th align="left">Threshold</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="320">Rule Description</th>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">SYSLINK-1</td>
+<td align="left">system_link Top Level BD Creation</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Created top level block diagram design dr.bd.tcl</td>
+<td align="left"></td>
+</tr>
+</table>
+<br>
+</body></html>
