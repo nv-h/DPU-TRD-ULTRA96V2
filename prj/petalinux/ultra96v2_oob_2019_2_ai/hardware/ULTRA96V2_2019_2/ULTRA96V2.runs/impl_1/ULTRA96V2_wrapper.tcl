@@ -65,25 +65,25 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param chipscope.maxJobs 1
   create_project -in_memory -part xczu3eg-sbva484-1-e
-  set_property board_part_repo_paths {/home/saido/sources/Avnet/bdf} [current_project]
+  set_property board_part_repo_paths {/home/training/git/avnet/bdf} [current_project]
   set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.cache/wt [current_project]
-  set_property parent.project_path /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.xpr [current_project]
-  set_property ip_repo_paths /home/saido/sources/Avnet/hdl/IP [current_project]
+  set_property webtalk.parent_dir /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.cache/wt [current_project]
+  set_property parent.project_path /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.xpr [current_project]
+  set_property ip_repo_paths /home/training/git/avnet/hdl/IP [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.cache/ip [current_project]
+  set_property ip_output_repo /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/synth_1/ULTRA96V2_wrapper.dcp
+  add_files -quiet /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/synth_1/ULTRA96V2_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ULTRA96V2.bd
+  add_files /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ULTRA96V2.bd
   set_param project.isImplRun false
-  read_xdc /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc
+  read_xdc /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc
   set_param project.isImplRun true
   link_design -top ULTRA96V2_wrapper -part xczu3eg-sbva484-1-e
   set_param project.isImplRun false

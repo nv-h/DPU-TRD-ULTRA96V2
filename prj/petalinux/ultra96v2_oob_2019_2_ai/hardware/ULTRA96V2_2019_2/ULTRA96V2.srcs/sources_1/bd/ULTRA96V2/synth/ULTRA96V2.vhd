@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
---Date        : Fri Jun 26 20:00:20 2020
---Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
+--Date        : Fri Jan 31 11:57:10 2020
+--Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
 --Command     : generate_target ULTRA96V2.bd
 --Design      : ULTRA96V2
 --Purpose     : IP block netlist

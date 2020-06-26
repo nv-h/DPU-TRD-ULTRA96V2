@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri Jun 26 20:04:13 2020
--- Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub -rename_top ULTRA96V2_PWM_w_Int_0_0 -prefix
---               ULTRA96V2_PWM_w_Int_0_0_ ULTRA96V2_PWM_w_Int_1_0_stub.vhdl
--- Design      : ULTRA96V2_PWM_w_Int_1_0
+-- Date        : Fri Jan 31 12:23:29 2020
+-- Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_PWM_w_Int_0_0/ULTRA96V2_PWM_w_Int_0_0_stub.vhdl
+-- Design      : ULTRA96V2_PWM_w_Int_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu3eg-sbva484-1-e
 -- --------------------------------------------------------------------------------

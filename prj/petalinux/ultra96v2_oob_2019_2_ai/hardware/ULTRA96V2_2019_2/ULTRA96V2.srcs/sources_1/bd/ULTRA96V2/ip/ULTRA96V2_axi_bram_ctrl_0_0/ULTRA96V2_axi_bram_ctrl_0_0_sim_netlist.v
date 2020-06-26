@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri Jun 26 20:02:44 2020
-// Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
+// Date        : Fri Jan 31 12:18:42 2020
+// Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_bram_ctrl_0_0/ULTRA96V2_axi_bram_ctrl_0_0_sim_netlist.v
+//               /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_bram_ctrl_0_0/ULTRA96V2_axi_bram_ctrl_0_0_sim_netlist.v
 // Design      : ULTRA96V2_axi_bram_ctrl_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

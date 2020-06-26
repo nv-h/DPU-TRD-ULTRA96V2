@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri Jun 26 20:05:00 2020
-// Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_1/ULTRA96V2_auto_ds_1_stub.v
-// Design      : ULTRA96V2_auto_ds_1
+// Date        : Fri Jan 31 12:05:06 2020
+// Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
+// Command     : write_verilog -force -mode synth_stub -rename_top ULTRA96V2_auto_ds_1 -prefix
+//               ULTRA96V2_auto_ds_1_ ULTRA96V2_auto_ds_7_stub.v
+// Design      : ULTRA96V2_auto_ds_7
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-e
 // --------------------------------------------------------------------------------

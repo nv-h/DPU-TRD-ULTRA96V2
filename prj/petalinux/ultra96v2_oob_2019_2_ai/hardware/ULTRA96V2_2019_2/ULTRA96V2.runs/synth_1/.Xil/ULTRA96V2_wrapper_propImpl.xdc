@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc rfile:../../../ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc rfile:../../../ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN B7 [get_ports bt_ctsn]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]

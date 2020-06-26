@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1593169241">
+<GenRun Id="impl_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1580489897">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="ULTRA96V2_wrapper.drc"/>
   <File Type="BG-BGN" Name="ULTRA96V2_wrapper.bgn"/>
@@ -101,7 +101,7 @@
     <File Path="$PSRCDIR/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../Boards/ULTRA96V2/ultra96v2_oob.xdc"/>
-        <Attr Name="ImportTime" Val="1592356320"/>
+        <Attr Name="ImportTime" Val="1579643824"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -134,44 +134,44 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_intc_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_8"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_system_management_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_bram_ctrl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_gpio_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_5_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_uart16550_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_uart16550_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_8"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_6_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_uart16550_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_uart16550_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_1"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_PWM_w_Int_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_blk_mem_gen_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_system_management_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_5"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_PWM_w_Int_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_5_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_pc_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_auto_ds_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="ULTRA96V2_proc_sys_reset_6_0"/>
 </GenRun>

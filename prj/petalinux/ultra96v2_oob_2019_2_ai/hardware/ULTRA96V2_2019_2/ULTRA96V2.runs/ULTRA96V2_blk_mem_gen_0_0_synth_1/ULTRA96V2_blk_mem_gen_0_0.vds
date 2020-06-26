@@ -2,28 +2,29 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Jun 26 20:00:43 2020
-# Process ID: 11450
-# Current directory: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1
+# Start of session at: Fri Jan 31 12:13:11 2020
+# Process ID: 17957
+# Current directory: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1
 # Command line: vivado -log ULTRA96V2_blk_mem_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ULTRA96V2_blk_mem_gen_0_0.tcl
-# Log file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/ULTRA96V2_blk_mem_gen_0_0.vds
-# Journal file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/vivado.jou
+# Log file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/ULTRA96V2_blk_mem_gen_0_0.vds
+# Journal file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source ULTRA96V2_blk_mem_gen_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/saido/sources/Avnet/hdl/IP'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/training/git/avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1476.836 ; gain = 0.000 ; free physical = 6717 ; free virtual = 14162
 Command: synth_design -top ULTRA96V2_blk_mem_gen_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11506 
+INFO: Helper process launched with PID 18340 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 2400.195 ; gain = 0.000 ; free physical = 11850 ; free virtual = 49011
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2293.270 ; gain = 0.000 ; free physical = 5116 ; free virtual = 12564
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ULTRA96V2_blk_mem_gen_0_0' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/synth/ULTRA96V2_blk_mem_gen_0_0.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'ULTRA96V2_blk_mem_gen_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/synth/ULTRA96V2_blk_mem_gen_0_0.vhd:80]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -99,8 +100,8 @@ INFO: [Synth 8-638] synthesizing module 'ULTRA96V2_blk_mem_gen_0_0' [/home/saido
 	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     17.37293 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/synth/ULTRA96V2_blk_mem_gen_0_0.vhd:255]
-INFO: [Synth 8-256] done synthesizing module 'ULTRA96V2_blk_mem_gen_0_0' (9#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/synth/ULTRA96V2_blk_mem_gen_0_0.vhd:80]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/synth/ULTRA96V2_blk_mem_gen_0_0.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'ULTRA96V2_blk_mem_gen_0_0' (9#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/synth/ULTRA96V2_blk_mem_gen_0_0.vhd:80]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
@@ -203,7 +204,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_A
 WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:56 . Memory (MB): peak = 2616.965 ; gain = 216.770 ; free physical = 8252 ; free virtual = 45471
+Finished RTL Elaboration : Time (s): cpu = 00:01:19 ; elapsed = 00:02:09 . Memory (MB): peak = 2511.039 ; gain = 217.770 ; free physical = 4146 ; free virtual = 11603
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -216,29 +217,30 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 2616.965 ; gain = 216.770 ; free physical = 8225 ; free virtual = 45445
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:02:10 . Memory (MB): peak = 2511.039 ; gain = 217.770 ; free physical = 4103 ; free virtual = 11560
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 2616.965 ; gain = 216.770 ; free physical = 8225 ; free virtual = 45445
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:20 ; elapsed = 00:02:10 . Memory (MB): peak = 2511.039 ; gain = 217.770 ; free physical = 4102 ; free virtual = 11560
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2624.965 ; gain = 0.000 ; free physical = 8127 ; free virtual = 45346
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2519.039 ; gain = 0.000 ; free physical = 4034 ; free virtual = 11491
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/ULTRA96V2_blk_mem_gen_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/ULTRA96V2_blk_mem_gen_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/ULTRA96V2_blk_mem_gen_0_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2582.906 ; gain = 0.000 ; free physical = 2964 ; free virtual = 10427
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/ULTRA96V2_blk_mem_gen_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2697.902 ; gain = 0.000 ; free physical = 6497 ; free virtual = 43717
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2582.906 ; gain = 0.000 ; free physical = 3124 ; free virtual = 10586
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2697.902 ; gain = 0.000 ; free physical = 6487 ; free virtual = 43706
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2582.906 ; gain = 0.000 ; free physical = 3261 ; free virtual = 10724
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:13 . Memory (MB): peak = 2697.902 ; gain = 297.707 ; free physical = 5199 ; free virtual = 42419
+Finished Constraint Validation : Time (s): cpu = 00:01:48 ; elapsed = 00:02:55 . Memory (MB): peak = 2582.906 ; gain = 289.637 ; free physical = 3054 ; free virtual = 10516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -246,17 +248,17 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:01:13 . Memory (MB): peak = 2697.902 ; gain = 297.707 ; free physical = 5196 ; free virtual = 42416
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:02:55 . Memory (MB): peak = 2582.906 ; gain = 289.637 ; free physical = 3053 ; free virtual = 10516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:13 . Memory (MB): peak = 2697.902 ; gain = 297.707 ; free physical = 5202 ; free virtual = 42422
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:02:55 . Memory (MB): peak = 2582.906 ; gain = 289.637 ; free physical = 3052 ; free virtual = 10514
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:14 . Memory (MB): peak = 2697.902 ; gain = 297.707 ; free physical = 5236 ; free virtual = 42453
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:48 ; elapsed = 00:02:56 . Memory (MB): peak = 2582.906 ; gain = 289.637 ; free physical = 3029 ; free virtual = 10492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -379,7 +381,7 @@ INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gnative_mem_ma
 INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_reg' (FD) to 'U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_reg'
 INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_reg' (FD) to 'U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 2697.902 ; gain = 297.707 ; free physical = 5358 ; free virtual = 42579
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:58 . Memory (MB): peak = 2582.906 ; gain = 289.637 ; free physical = 2882 ; free virtual = 10352
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -391,13 +393,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:56 . Memory (MB): peak = 3086.230 ; gain = 686.035 ; free physical = 15178 ; free virtual = 52376
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:05 ; elapsed = 00:05:34 . Memory (MB): peak = 2979.242 ; gain = 685.973 ; free physical = 4736 ; free virtual = 12206
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:56 . Memory (MB): peak = 3096.246 ; gain = 696.051 ; free physical = 15169 ; free virtual = 52367
+Finished Timing Optimization : Time (s): cpu = 00:03:05 ; elapsed = 00:05:34 . Memory (MB): peak = 2990.258 ; gain = 696.988 ; free physical = 4734 ; free virtual = 12203
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -409,7 +411,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:56 . Memory (MB): peak = 3097.246 ; gain = 697.051 ; free physical = 15160 ; free virtual = 52357
+Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:05:34 . Memory (MB): peak = 2990.258 ; gain = 696.988 ; free physical = 4730 ; free virtual = 12199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -433,13 +435,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14596 ; free virtual = 51794
+Finished IO Insertion : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4275 ; free virtual = 11744
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14595 ; free virtual = 51794
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4275 ; free virtual = 11744
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -458,25 +460,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14589 ; free virtual = 51788
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4270 ; free virtual = 11739
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14589 ; free virtual = 51788
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4269 ; free virtual = 11738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14588 ; free virtual = 51786
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4266 ; free virtual = 11735
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14586 ; free virtual = 51785
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4266 ; free virtual = 11735
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -532,33 +534,33 @@ Report Instance Areas:
 |13    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized2 |     5|
 +------+--------------------------------------------------------------+-----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.090 ; gain = 712.895 ; free physical = 14586 ; free virtual = 51785
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.102 ; gain = 712.832 ; free physical = 4266 ; free virtual = 11735
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 305 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:49 . Memory (MB): peak = 3113.090 ; gain = 631.957 ; free physical = 14603 ; free virtual = 51802
-Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:02:00 . Memory (MB): peak = 3113.098 ; gain = 712.895 ; free physical = 14605 ; free virtual = 51804
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:52 ; elapsed = 00:05:10 . Memory (MB): peak = 3006.102 ; gain = 640.965 ; free physical = 4294 ; free virtual = 11764
+Synthesis Optimization Complete : Time (s): cpu = 00:03:11 ; elapsed = 00:05:42 . Memory (MB): peak = 3006.109 ; gain = 712.832 ; free physical = 4295 ; free virtual = 11764
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3113.098 ; gain = 0.000 ; free physical = 14621 ; free virtual = 51820
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3006.109 ; gain = 0.000 ; free physical = 4343 ; free virtual = 11812
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3135.902 ; gain = 0.000 ; free physical = 14353 ; free virtual = 51552
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3032.820 ; gain = 0.000 ; free physical = 4179 ; free virtual = 11649
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 71 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:02:19 . Memory (MB): peak = 3135.902 ; gain = 1554.758 ; free physical = 14449 ; free virtual = 51648
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3135.902 ; gain = 0.000 ; free physical = 14449 ; free virtual = 51647
+synth_design: Time (s): cpu = 00:03:43 ; elapsed = 00:06:37 . Memory (MB): peak = 3032.820 ; gain = 1555.984 ; free physical = 4286 ; free virtual = 11755
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3032.820 ; gain = 0.000 ; free physical = 4286 ; free virtual = 11755
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/ULTRA96V2_blk_mem_gen_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/ULTRA96V2_blk_mem_gen_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ULTRA96V2_blk_mem_gen_0_0, cache-ID = ea6d162c5d7e83b3
 INFO: [Coretcl 2-1174] Renamed 12 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3135.902 ; gain = 0.000 ; free physical = 14299 ; free virtual = 51512
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3032.820 ; gain = 0.000 ; free physical = 4242 ; free virtual = 11712
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/ULTRA96V2_blk_mem_gen_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_blk_mem_gen_0_0_synth_1/ULTRA96V2_blk_mem_gen_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ULTRA96V2_blk_mem_gen_0_0_utilization_synth.rpt -pb ULTRA96V2_blk_mem_gen_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 20:03:19 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 31 12:20:29 2020...

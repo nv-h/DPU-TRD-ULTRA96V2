@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri Jun 26 20:04:59 2020
--- Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top ULTRA96V2_auto_ds_7 -prefix
---               ULTRA96V2_auto_ds_7_ ULTRA96V2_auto_ds_1_sim_netlist.vhdl
--- Design      : ULTRA96V2_auto_ds_1
+-- Date        : Fri Jan 31 12:05:09 2020
+-- Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_7/ULTRA96V2_auto_ds_7_sim_netlist.vhdl
+-- Design      : ULTRA96V2_auto_ds_7
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xczu3eg-sbva484-1-e
@@ -28,6 +28,8 @@ entity ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_b_downsizer is
     empty : in STD_LOGIC;
     m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_b_downsizer : entity is "axi_dwidth_converter_v2_1_20_b_downsizer";
 end ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_b_downsizer;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_b_downsizer is
@@ -444,6 +446,8 @@ entity ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_r_downsizer is
     \WORD_LANE[2].S_AXI_RDATA_II_reg[95]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \WORD_LANE[3].S_AXI_RDATA_II_reg[127]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_r_downsizer : entity is "axi_dwidth_converter_v2_1_20_r_downsizer";
 end ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_r_downsizer;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_r_downsizer is
@@ -1848,6 +1852,8 @@ entity ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_w_downsizer is
     \m_axi_wdata[31]_INST_0_i_4\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
     D : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_w_downsizer : entity is "axi_dwidth_converter_v2_1_20_w_downsizer";
 end ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_w_downsizer;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_w_downsizer is
@@ -2189,6 +2195,8 @@ entity ULTRA96V2_auto_ds_7_xpm_cdc_async_rst is
   attribute INIT_SYNC_FF of ULTRA96V2_auto_ds_7_xpm_cdc_async_rst : entity is 0;
   attribute INV_DEF_VAL : string;
   attribute INV_DEF_VAL of ULTRA96V2_auto_ds_7_xpm_cdc_async_rst : entity is "1'b1";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_xpm_cdc_async_rst : entity is "xpm_cdc_async_rst";
   attribute RST_ACTIVE_HIGH : integer;
   attribute RST_ACTIVE_HIGH of ULTRA96V2_auto_ds_7_xpm_cdc_async_rst : entity is 1;
   attribute VERSION : integer;
@@ -2393,6 +2401,8 @@ entity ULTRA96V2_auto_ds_7_dmem is
     I24 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gpr1.dout_i_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_dmem : entity is "dmem";
 end ULTRA96V2_auto_ds_7_dmem;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_dmem is
@@ -3496,6 +3506,8 @@ entity ULTRA96V2_auto_ds_7_rd_bin_cntr is
     clk : in STD_LOGIC;
     \gc0.count_d1_reg[0]_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_rd_bin_cntr : entity is "rd_bin_cntr";
 end ULTRA96V2_auto_ds_7_rd_bin_cntr;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_rd_bin_cntr is
@@ -4058,6 +4070,8 @@ entity ULTRA96V2_auto_ds_7_rd_fwft is
     rd_en : in STD_LOGIC;
     \gc0.count_reg[4]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_rd_fwft : entity is "rd_fwft";
 end ULTRA96V2_auto_ds_7_rd_fwft;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_rd_fwft is
@@ -4754,6 +4768,8 @@ entity ULTRA96V2_auto_ds_7_rd_status_flags_ss is
     clk : in STD_LOGIC;
     ram_empty_fb_i_reg_0 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_rd_status_flags_ss : entity is "rd_status_flags_ss";
 end ULTRA96V2_auto_ds_7_rd_status_flags_ss;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_rd_status_flags_ss is
@@ -4922,6 +4938,8 @@ entity ULTRA96V2_auto_ds_7_wr_bin_cntr is
     clk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_wr_bin_cntr : entity is "wr_bin_cntr";
 end ULTRA96V2_auto_ds_7_wr_bin_cntr;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_wr_bin_cntr is
@@ -5818,6 +5836,8 @@ entity ULTRA96V2_auto_ds_7_wr_status_flags_ss is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_en : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_wr_status_flags_ss : entity is "wr_status_flags_ss";
 end ULTRA96V2_auto_ds_7_wr_status_flags_ss;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_wr_status_flags_ss is
@@ -6078,6 +6098,8 @@ entity ULTRA96V2_auto_ds_7_memory is
     I24 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gpr1.dout_i_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_memory : entity is "memory";
 end ULTRA96V2_auto_ds_7_memory;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_memory is
@@ -6905,6 +6927,8 @@ entity ULTRA96V2_auto_ds_7_rd_logic is
     \gc0.count_d1_reg[0]\ : in STD_LOGIC;
     rd_en : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_rd_logic : entity is "rd_logic";
 end ULTRA96V2_auto_ds_7_rd_logic;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_rd_logic is
@@ -7063,6 +7087,8 @@ entity ULTRA96V2_auto_ds_7_reset_blk_ramfifo is
     rd_en : in STD_LOGIC;
     \goreg_dm.dout_i_reg[28]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
 end ULTRA96V2_auto_ds_7_reset_blk_ramfifo;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_reset_blk_ramfifo is
@@ -7603,6 +7629,8 @@ entity ULTRA96V2_auto_ds_7_wr_logic is
     ram_empty_fb_i_i_3 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     ram_empty_fb_i_i_2 : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_wr_logic : entity is "wr_logic";
 end ULTRA96V2_auto_ds_7_wr_logic;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_wr_logic is
@@ -7760,6 +7788,8 @@ entity ULTRA96V2_auto_ds_7_fifo_generator_ramfifo is
     rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
 end ULTRA96V2_auto_ds_7_fifo_generator_ramfifo;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_fifo_generator_ramfifo is
@@ -8010,6 +8040,8 @@ entity ULTRA96V2_auto_ds_7_fifo_generator_top is
     rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_fifo_generator_top : entity is "fifo_generator_top";
 end ULTRA96V2_auto_ds_7_fifo_generator_top;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_fifo_generator_top is
@@ -8107,6 +8139,8 @@ entity ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5_synth is
     rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5_synth : entity is "fifo_generator_v13_2_5_synth";
 end ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5_synth;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5_synth is
@@ -8831,6 +8865,8 @@ entity ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5 is
   attribute C_WR_PNTR_WIDTH_WRCH of ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5 : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
   attribute C_WR_RESPONSE_LATENCY of ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5 : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5 : entity is "fifo_generator_v13_2_5";
 end ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_fifo_generator_v13_2_5 is
@@ -12043,6 +12079,8 @@ entity ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_fifo_gen is
     access_is_fix_q : in STD_LOGIC;
     \gpr1.dout_i_reg[1]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_fifo_gen : entity is "axi_data_fifo_v2_1_19_fifo_gen";
 end ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_fifo_gen;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_fifo_gen is
@@ -19537,6 +19575,8 @@ entity ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_axic_fifo is
     access_is_fix_q : in STD_LOGIC;
     \gpr1.dout_i_reg[1]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_axic_fifo : entity is "axi_data_fifo_v2_1_19_axic_fifo";
 end ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_axic_fifo;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_data_fifo_v2_1_19_axic_fifo is
@@ -19917,6 +19957,8 @@ entity ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_a_downsizer is
     s_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_a_downsizer : entity is "axi_dwidth_converter_v2_1_20_a_downsizer";
 end ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_a_downsizer;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_a_downsizer is
@@ -26579,6 +26621,8 @@ entity ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_axi_downsizer is
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_wdata : in STD_LOGIC_VECTOR ( 127 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_axi_downsizer : entity is "axi_dwidth_converter_v2_1_20_axi_downsizer";
 end ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_axi_downsizer;
 
 architecture STRUCTURE of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_axi_downsizer is
@@ -26903,6 +26947,8 @@ entity ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_top is
   attribute C_S_AXI_ID_WIDTH of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_top : entity is 16;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_top : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_top : entity is "axi_dwidth_converter_v2_1_20_top";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of ULTRA96V2_auto_ds_7_axi_dwidth_converter_v2_1_20_top : entity is 1;
   attribute P_AXI4 : integer;
@@ -27087,7 +27133,7 @@ entity ULTRA96V2_auto_ds_7 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of ULTRA96V2_auto_ds_7 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of ULTRA96V2_auto_ds_7 : entity is "ULTRA96V2_auto_ds_1,axi_dwidth_converter_v2_1_20_top,{}";
+  attribute CHECK_LICENSE_TYPE of ULTRA96V2_auto_ds_7 : entity is "ULTRA96V2_auto_ds_7,axi_dwidth_converter_v2_1_20_top,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of ULTRA96V2_auto_ds_7 : entity is "yes";
   attribute X_CORE_INFO : string;
@@ -27156,7 +27202,7 @@ architecture STRUCTURE of ULTRA96V2_auto_ds_7 is
   attribute X_INTERFACE_INFO of m_axi_rlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI RLAST";
   attribute X_INTERFACE_INFO of m_axi_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI RREADY";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN ULTRA96V2_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN ULTRA96V2_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI RVALID";
   attribute X_INTERFACE_INFO of m_axi_wlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI WLAST";
   attribute X_INTERFACE_INFO of m_axi_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI WREADY";
@@ -27173,7 +27219,7 @@ architecture STRUCTURE of ULTRA96V2_auto_ds_7 is
   attribute X_INTERFACE_INFO of s_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI BVALID";
   attribute X_INTERFACE_INFO of s_axi_rlast : signal is "xilinx.com:interface:aximm:1.0 S_AXI RLAST";
   attribute X_INTERFACE_INFO of s_axi_rready : signal is "xilinx.com:interface:aximm:1.0 S_AXI RREADY";
-  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 16, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN ULTRA96V2_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 16, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN ULTRA96V2_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI RVALID";
   attribute X_INTERFACE_INFO of s_axi_wlast : signal is "xilinx.com:interface:aximm:1.0 S_AXI WLAST";
   attribute X_INTERFACE_INFO of s_axi_wready : signal is "xilinx.com:interface:aximm:1.0 S_AXI WREADY";

@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri Jun 26 20:04:14 2020
--- Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_PWM_w_Int_1_0/ULTRA96V2_PWM_w_Int_1_0_sim_netlist.vhdl
--- Design      : ULTRA96V2_PWM_w_Int_1_0
+-- Date        : Fri Jan 31 12:23:28 2020
+-- Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
+-- Command     : write_vhdl -force -mode funcsim -rename_top ULTRA96V2_PWM_w_Int_1_0 -prefix
+--               ULTRA96V2_PWM_w_Int_1_0_ ULTRA96V2_PWM_w_Int_0_0_sim_netlist.vhdl
+-- Design      : ULTRA96V2_PWM_w_Int_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xczu3eg-sbva484-1-e
@@ -28,8 +28,6 @@ entity ULTRA96V2_PWM_w_Int_1_0_PWM_Controller_Int is
     \PWM_out_reg[0]_1\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ULTRA96V2_PWM_w_Int_1_0_PWM_Controller_Int : entity is "PWM_Controller_Int";
 end ULTRA96V2_PWM_w_Int_1_0_PWM_Controller_Int;
 
 architecture STRUCTURE of ULTRA96V2_PWM_w_Int_1_0_PWM_Controller_Int is
@@ -501,8 +499,6 @@ entity ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int_S00_AXI is
     s00_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int_S00_AXI : entity is "PWM_w_Int_S00_AXI";
 end ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int_S00_AXI;
 
 architecture STRUCTURE of ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int_S00_AXI is
@@ -2976,8 +2972,6 @@ entity ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int is
     s00_axi_bready : in STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int : entity is "PWM_w_Int";
 end ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int;
 
 architecture STRUCTURE of ULTRA96V2_PWM_w_Int_1_0_PWM_w_Int is
@@ -3134,7 +3128,7 @@ entity ULTRA96V2_PWM_w_Int_1_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of ULTRA96V2_PWM_w_Int_1_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of ULTRA96V2_PWM_w_Int_1_0 : entity is "ULTRA96V2_PWM_w_Int_1_0,PWM_w_Int,{}";
+  attribute CHECK_LICENSE_TYPE of ULTRA96V2_PWM_w_Int_1_0 : entity is "ULTRA96V2_PWM_w_Int_0_0,PWM_w_Int,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of ULTRA96V2_PWM_w_Int_1_0 : entity is "yes";
   attribute ip_definition_source : string;

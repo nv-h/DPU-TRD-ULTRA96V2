@@ -1,8 +1,8 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri Jun 26 20:02:33 2020
-// Host        : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
+// Date        : Fri Jan 31 12:24:33 2020
+// Host        : ubuv1804 running 64-bit Ubuntu 18.04 LTS
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ ULTRA96V2_system_management_wiz_0_0_stub.v
 // Design      : ULTRA96V2_system_management_wiz_0_0
