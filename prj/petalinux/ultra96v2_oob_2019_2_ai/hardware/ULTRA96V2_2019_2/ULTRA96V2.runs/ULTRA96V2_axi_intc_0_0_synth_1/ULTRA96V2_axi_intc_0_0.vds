@@ -1,0 +1,773 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 26 20:02:47 2020
+# Process ID: 12910
+# Current directory: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1
+# Command line: vivado -log ULTRA96V2_axi_intc_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ULTRA96V2_axi_intc_0_0.tcl
+# Log file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/ULTRA96V2_axi_intc_0_0.vds
+# Journal file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ULTRA96V2_axi_intc_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/saido/sources/Avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top ULTRA96V2_axi_intc_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13483 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2399.797 ; gain = 0.000 ; free physical = 14971 ; free virtual = 52167
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ULTRA96V2_axi_intc_0_0' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/synth/ULTRA96V2_axi_intc_0_0.vhd:85]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_INSTANCE bound to: ULTRA96V2_axi_intc_0_0 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_INTR_INPUTS bound to: 32 - type: integer 
+	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_KIND_OF_EDGE bound to: 32'b11111111111111111111111111111111 
+	Parameter C_KIND_OF_LVL bound to: 32'b11111111111111111111111111111111 
+	Parameter C_ASYNC_INTR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+	Parameter C_ENABLE_ASYNC bound to: 0 - type: integer 
+	Parameter C_HAS_IPR bound to: 1 - type: integer 
+	Parameter C_HAS_SIE bound to: 1 - type: integer 
+	Parameter C_HAS_CIE bound to: 1 - type: integer 
+	Parameter C_HAS_IVR bound to: 1 - type: integer 
+	Parameter C_HAS_ILR bound to: 0 - type: integer 
+	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE bound to: 1'b1 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
+	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
+	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_intc' declared at '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3452' bound to instance 'U0' of component 'axi_intc' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/synth/ULTRA96V2_axi_intc_0_0.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'axi_intc' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_INSTANCE bound to: ULTRA96V2_axi_intc_0_0 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_INTR_INPUTS bound to: 32 - type: integer 
+	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: -1 - type: integer 
+	Parameter C_KIND_OF_EDGE bound to: -1 - type: integer 
+	Parameter C_KIND_OF_LVL bound to: -1 - type: integer 
+	Parameter C_ASYNC_INTR bound to: -1 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_IPR bound to: 1 - type: integer 
+	Parameter C_HAS_SIE bound to: 1 - type: integer 
+	Parameter C_HAS_CIE bound to: 1 - type: integer 
+	Parameter C_HAS_IVR bound to: 1 - type: integer 
+	Parameter C_HAS_ILR bound to: 0 - type: integer 
+	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE bound to: 1'b1 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
+	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_ENABLE_ASYNC bound to: 0 - type: integer 
+	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
+	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'intc_core' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:794]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_INTR_INPUTS bound to: 32 - type: integer 
+	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: -1 - type: integer 
+	Parameter C_KIND_OF_EDGE bound to: -1 - type: integer 
+	Parameter C_KIND_OF_LVL bound to: -1 - type: integer 
+	Parameter C_ASYNC_INTR bound to: -1 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_HAS_IPR bound to: 1 - type: integer 
+	Parameter C_HAS_SIE bound to: 1 - type: integer 
+	Parameter C_HAS_CIE bound to: 1 - type: integer 
+	Parameter C_HAS_IVR bound to: 1 - type: integer 
+	Parameter C_HAS_ILR bound to: 0 - type: integer 
+	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE bound to: 1'b1 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
+	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+	Parameter C_IVAR_WE_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
+	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:767]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:1894]
+WARNING: [Synth 8-6014] Unused sequential element ack_or_reg was removed.  [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:2682]
+INFO: [Synth 8-256] done synthesizing module 'intc_core' (1#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:794]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001011111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000000010 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001011111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000000010 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001011111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000000010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b100000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 1 - type: integer 
+	Parameter C_BAR bound to: 1'b0 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 1 - type: integer 
+	Parameter C_BAR bound to: 1'b1 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (2#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (3#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (4#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (5#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_intc' (6#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
+INFO: [Synth 8-256] done synthesizing module 'ULTRA96V2_axi_intc_0_0' (7#1) [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/synth/ULTRA96V2_axi_intc_0_0.vhd:85]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[1]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[2]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[3]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[4]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[5]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[6]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[7]
+WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[8]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[2]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[3]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[4]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[5]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[6]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[7]
+WARNING: [Synth 8-3331] design pselect_f__parameterized16 has unconnected port A[8]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[3]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[4]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[5]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[6]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[7]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[8]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[3]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[4]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[5]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[10]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[11]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[12]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[13]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[14]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[15]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[16]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[17]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[18]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[1]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[6]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[8]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[9]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[10]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[11]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[12]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[13]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[14]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[15]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[16]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[17]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[18]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Processor_clk
+WARNING: [Synth 8-3331] design intc_core has unconnected port processor_rst
+WARNING: [Synth 8-3331] design intc_core has unconnected port Processor_ack[1]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Processor_ack[0]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[31]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[30]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[29]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[28]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[27]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[26]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[25]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[24]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[23]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[22]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[21]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[20]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[19]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[18]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[17]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[16]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[15]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[14]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[13]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[12]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[11]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[10]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[9]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[8]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[7]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[6]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[5]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[4]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[3]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[2]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[1]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[0]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port irq_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2455.605 ; gain = 55.809 ; free physical = 14780 ; free virtual = 51980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2464.512 ; gain = 64.715 ; free physical = 14845 ; free virtual = 52046
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2464.512 ; gain = 64.715 ; free physical = 14845 ; free virtual = 52046
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2464.512 ; gain = 0.000 ; free physical = 14817 ; free virtual = 52017
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2636.262 ; gain = 0.000 ; free physical = 13475 ; free virtual = 50689
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0.xdc] for cell 'U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2636.262 ; gain = 0.000 ; free physical = 13472 ; free virtual = 50686
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2636.262 ; gain = 0.000 ; free physical = 13486 ; free virtual = 50700
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2636.262 ; gain = 236.465 ; free physical = 13656 ; free virtual = 50874
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2636.262 ; gain = 236.465 ; free physical = 13656 ; free virtual = 50873
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2636.262 ; gain = 236.465 ; free physical = 13654 ; free virtual = 50872
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2636.262 ; gain = 236.465 ; free physical = 13567 ; free virtual = 50786
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 35    
+	                1 Bit    Registers := 262   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 31    
+	   3 Input      6 Bit        Muxes := 2     
+	  17 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module intc_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 228   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 31    
+	   3 Input      6 Bit        Muxes := 2     
+	  17 Input      5 Bit        Muxes := 1     
+Module pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 23    
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module axi_intc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_intc has unconnected port processor_clk
+WARNING: [Synth 8-3331] design axi_intc has unconnected port processor_rst
+WARNING: [Synth 8-3331] design axi_intc has unconnected port processor_ack[1]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port processor_ack[0]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port irq_in
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[31]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[30]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[29]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[28]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[27]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[26]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[25]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[24]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[23]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[22]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[21]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2636.262 ; gain = 236.465 ; free physical = 13007 ; free virtual = 50232
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:08 . Memory (MB): peak = 3089.020 ; gain = 689.223 ; free physical = 16695 ; free virtual = 53938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:10 . Memory (MB): peak = 3134.059 ; gain = 734.262 ; free physical = 16287 ; free virtual = 53525
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:01:10 . Memory (MB): peak = 3134.059 ; gain = 734.262 ; free physical = 16226 ; free virtual = 53464
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17952 ; free virtual = 55190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17951 ; free virtual = 55190
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17944 ; free virtual = 55183
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17944 ; free virtual = 55183
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17939 ; free virtual = 55177
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17938 ; free virtual = 55177
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    76|
+|3     |LUT3 |    84|
+|4     |LUT4 |    23|
+|5     |LUT5 |   123|
+|6     |LUT6 |   139|
+|7     |FDRE |   410|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------+-----------------+------+
+|      |Instance                 |Module           |Cells |
++------+-------------------------+-----------------+------+
+|1     |top                      |                 |   859|
+|2     |  U0                     |axi_intc         |   859|
+|3     |    AXI_LITE_IPIF_I      |axi_lite_ipif    |   286|
+|4     |      I_SLAVE_ATTACHMENT |slave_attachment |   286|
+|5     |        I_DECODER        |address_decoder  |   187|
+|6     |    INTC_CORE_I          |intc_core        |   569|
++------+-------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.027 ; gain = 737.230 ; free physical = 17937 ; free virtual = 55176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:03 . Memory (MB): peak = 3137.027 ; gain = 565.480 ; free physical = 17973 ; free virtual = 55211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 3137.035 ; gain = 737.230 ; free physical = 17972 ; free virtual = 55210
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3147.996 ; gain = 0.000 ; free physical = 18029 ; free virtual = 55268
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3185.949 ; gain = 0.000 ; free physical = 17912 ; free virtual = 55150
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:33 . Memory (MB): peak = 3185.949 ; gain = 1604.586 ; free physical = 18041 ; free virtual = 55279
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3185.949 ; gain = 0.000 ; free physical = 18041 ; free virtual = 55279
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/ULTRA96V2_axi_intc_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ULTRA96V2_axi_intc_0_0, cache-ID = 827e5429e67bc228
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3209.961 ; gain = 0.000 ; free physical = 17806 ; free virtual = 55046
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_axi_intc_0_0_synth_1/ULTRA96V2_axi_intc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ULTRA96V2_axi_intc_0_0_utilization_synth.rpt -pb ULTRA96V2_axi_intc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 20:04:37 2020...

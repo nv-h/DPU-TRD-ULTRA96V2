@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 26 20:04:44 2020
+# Process ID: 14863
+# Current directory: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_auto_pc_7_synth_1
+# Command line: vivado -log ULTRA96V2_auto_pc_7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ULTRA96V2_auto_pc_7.tcl
+# Log file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_auto_pc_7_synth_1/ULTRA96V2_auto_pc_7.vds
+# Journal file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/ULTRA96V2_auto_pc_7_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ULTRA96V2_auto_pc_7.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/saido/sources/Avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ULTRA96V2_auto_pc_7, cache-ID = 16630ea8f016bbf4.
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 20:04:55 2020...

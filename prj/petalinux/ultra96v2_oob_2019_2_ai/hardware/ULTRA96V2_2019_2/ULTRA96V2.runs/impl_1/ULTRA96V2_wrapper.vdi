@@ -1,0 +1,848 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 26 20:07:03 2020
+# Process ID: 15435
+# Current directory: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1
+# Command line: vivado -log ULTRA96V2_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ULTRA96V2_wrapper.tcl -notrace
+# Log file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper.vdi
+# Journal file: /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ULTRA96V2_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/saido/sources/Avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+Command: link_design -top ULTRA96V2_wrapper -part xczu3eg-sbva484-1-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_PWM_w_Int_0_0/ULTRA96V2_PWM_w_Int_0_0.dcp' for cell 'ULTRA96V2_i/PWM_w_Int_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_PWM_w_Int_1_0/ULTRA96V2_PWM_w_Int_1_0.dcp' for cell 'ULTRA96V2_i/PWM_w_Int_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_bram_ctrl_0_0/ULTRA96V2_axi_bram_ctrl_0_0.dcp' for cell 'ULTRA96V2_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_blk_mem_gen_0_0/ULTRA96V2_blk_mem_gen_0_0.dcp' for cell 'ULTRA96V2_i/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_0_0/ULTRA96V2_axi_gpio_0_0.dcp' for cell 'ULTRA96V2_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_1_0/ULTRA96V2_axi_gpio_1_0.dcp' for cell 'ULTRA96V2_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_2_0/ULTRA96V2_axi_gpio_2_0.dcp' for cell 'ULTRA96V2_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0.dcp' for cell 'ULTRA96V2_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_0_0/ULTRA96V2_axi_uart16550_0_0.dcp' for cell 'ULTRA96V2_i/axi_uart16550_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_1_0/ULTRA96V2_axi_uart16550_1_0.dcp' for cell 'ULTRA96V2_i/axi_uart16550_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0.dcp' for cell 'ULTRA96V2_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_1/ULTRA96V2_proc_sys_reset_0_1.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_1_0/ULTRA96V2_proc_sys_reset_1_0.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_2_0/ULTRA96V2_proc_sys_reset_2_0.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_3_0/ULTRA96V2_proc_sys_reset_3_0.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_4_0/ULTRA96V2_proc_sys_reset_4_0.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_4'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_5_0/ULTRA96V2_proc_sys_reset_5_0.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_5'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_6_0/ULTRA96V2_proc_sys_reset_6_0.dcp' for cell 'ULTRA96V2_i/proc_sys_reset_6'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_0/ULTRA96V2_proc_sys_reset_0_0.dcp' for cell 'ULTRA96V2_i/rst_ps8_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_system_management_wiz_0_0/ULTRA96V2_system_management_wiz_0_0.dcp' for cell 'ULTRA96V2_i/system_management_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_zynq_ultra_ps_e_0_0/ULTRA96V2_zynq_ultra_ps_e_0_0.dcp' for cell 'ULTRA96V2_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_xbar_0/ULTRA96V2_xbar_0.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_0/ULTRA96V2_auto_ds_0.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_0/ULTRA96V2_auto_pc_0.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_1/ULTRA96V2_auto_ds_1.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_1/ULTRA96V2_auto_pc_1.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_2/ULTRA96V2_auto_ds_2.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_2/ULTRA96V2_auto_pc_2.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_3/ULTRA96V2_auto_ds_3.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_3/ULTRA96V2_auto_pc_3.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_4/ULTRA96V2_auto_ds_4.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_4/ULTRA96V2_auto_pc_4.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_5/ULTRA96V2_auto_ds_5.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_5/ULTRA96V2_auto_pc_5.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_6/ULTRA96V2_auto_ds_6.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_6/ULTRA96V2_auto_pc_6.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_7/ULTRA96V2_auto_ds_7.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_7/ULTRA96V2_auto_pc_7.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_8/ULTRA96V2_auto_ds_8.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_pc_8/ULTRA96V2_auto_pc_8.dcp' for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2434.375 ; gain = 0.000 ; free physical = 25631 ; free virtual = 62868
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. ULTRA96V2_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'ULTRA96V2_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_zynq_ultra_ps_e_0_0/ULTRA96V2_zynq_ultra_ps_e_0_0.xdc] for cell 'ULTRA96V2_i/zynq_ultra_ps_e_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_zynq_ultra_ps_e_0_0/ULTRA96V2_zynq_ultra_ps_e_0_0.xdc] for cell 'ULTRA96V2_i/zynq_ultra_ps_e_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_0/ULTRA96V2_proc_sys_reset_0_0_board.xdc] for cell 'ULTRA96V2_i/rst_ps8_0_100M/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_0/ULTRA96V2_proc_sys_reset_0_0_board.xdc] for cell 'ULTRA96V2_i/rst_ps8_0_100M/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_0/ULTRA96V2_proc_sys_reset_0_0.xdc] for cell 'ULTRA96V2_i/rst_ps8_0_100M/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_0/ULTRA96V2_proc_sys_reset_0_0.xdc] for cell 'ULTRA96V2_i/rst_ps8_0_100M/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_0_0/ULTRA96V2_axi_uart16550_0_0_board.xdc] for cell 'ULTRA96V2_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_0_0/ULTRA96V2_axi_uart16550_0_0_board.xdc] for cell 'ULTRA96V2_i/axi_uart16550_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_0_0/ULTRA96V2_axi_uart16550_0_0.xdc] for cell 'ULTRA96V2_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_0_0/ULTRA96V2_axi_uart16550_0_0.xdc] for cell 'ULTRA96V2_i/axi_uart16550_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_1_0/ULTRA96V2_axi_uart16550_1_0_board.xdc] for cell 'ULTRA96V2_i/axi_uart16550_1/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_1_0/ULTRA96V2_axi_uart16550_1_0_board.xdc] for cell 'ULTRA96V2_i/axi_uart16550_1/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_1_0/ULTRA96V2_axi_uart16550_1_0.xdc] for cell 'ULTRA96V2_i/axi_uart16550_1/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_uart16550_1_0/ULTRA96V2_axi_uart16550_1_0.xdc] for cell 'ULTRA96V2_i/axi_uart16550_1/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_0_0/ULTRA96V2_axi_gpio_0_0_board.xdc] for cell 'ULTRA96V2_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_0_0/ULTRA96V2_axi_gpio_0_0_board.xdc] for cell 'ULTRA96V2_i/axi_gpio_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_0_0/ULTRA96V2_axi_gpio_0_0.xdc] for cell 'ULTRA96V2_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_0_0/ULTRA96V2_axi_gpio_0_0.xdc] for cell 'ULTRA96V2_i/axi_gpio_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_1_0/ULTRA96V2_axi_gpio_1_0_board.xdc] for cell 'ULTRA96V2_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_1_0/ULTRA96V2_axi_gpio_1_0_board.xdc] for cell 'ULTRA96V2_i/axi_gpio_1/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_1_0/ULTRA96V2_axi_gpio_1_0.xdc] for cell 'ULTRA96V2_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_1_0/ULTRA96V2_axi_gpio_1_0.xdc] for cell 'ULTRA96V2_i/axi_gpio_1/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_2_0/ULTRA96V2_axi_gpio_2_0_board.xdc] for cell 'ULTRA96V2_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_2_0/ULTRA96V2_axi_gpio_2_0_board.xdc] for cell 'ULTRA96V2_i/axi_gpio_2/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_2_0/ULTRA96V2_axi_gpio_2_0.xdc] for cell 'ULTRA96V2_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_gpio_2_0/ULTRA96V2_axi_gpio_2_0.xdc] for cell 'ULTRA96V2_i/axi_gpio_2/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_system_management_wiz_0_0/ULTRA96V2_system_management_wiz_0_0_board.xdc] for cell 'ULTRA96V2_i/system_management_wiz_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_system_management_wiz_0_0/ULTRA96V2_system_management_wiz_0_0_board.xdc] for cell 'ULTRA96V2_i/system_management_wiz_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_system_management_wiz_0_0/ULTRA96V2_system_management_wiz_0_0.xdc] for cell 'ULTRA96V2_i/system_management_wiz_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_system_management_wiz_0_0/ULTRA96V2_system_management_wiz_0_0.xdc] for cell 'ULTRA96V2_i/system_management_wiz_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0.xdc] for cell 'ULTRA96V2_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0.xdc] for cell 'ULTRA96V2_i/axi_intc_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0_board.xdc] for cell 'ULTRA96V2_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0_board.xdc] for cell 'ULTRA96V2_i/clk_wiz_0/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0.xdc] for cell 'ULTRA96V2_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3478.449 ; gain = 459.375 ; free physical = 24713 ; free virtual = 61951
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_clk_wiz_0_0/ULTRA96V2_clk_wiz_0_0.xdc] for cell 'ULTRA96V2_i/clk_wiz_0/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_1/ULTRA96V2_proc_sys_reset_0_1_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_1/ULTRA96V2_proc_sys_reset_0_1_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_1/ULTRA96V2_proc_sys_reset_0_1.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_0_1/ULTRA96V2_proc_sys_reset_0_1.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_1_0/ULTRA96V2_proc_sys_reset_1_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_1_0/ULTRA96V2_proc_sys_reset_1_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_1_0/ULTRA96V2_proc_sys_reset_1_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_1_0/ULTRA96V2_proc_sys_reset_1_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_2_0/ULTRA96V2_proc_sys_reset_2_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_2_0/ULTRA96V2_proc_sys_reset_2_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_2_0/ULTRA96V2_proc_sys_reset_2_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_2_0/ULTRA96V2_proc_sys_reset_2_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_3_0/ULTRA96V2_proc_sys_reset_3_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_3_0/ULTRA96V2_proc_sys_reset_3_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_3_0/ULTRA96V2_proc_sys_reset_3_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_3_0/ULTRA96V2_proc_sys_reset_3_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_4_0/ULTRA96V2_proc_sys_reset_4_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_4/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_4_0/ULTRA96V2_proc_sys_reset_4_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_4/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_4_0/ULTRA96V2_proc_sys_reset_4_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_4/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_4_0/ULTRA96V2_proc_sys_reset_4_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_4/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_5_0/ULTRA96V2_proc_sys_reset_5_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_5/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_5_0/ULTRA96V2_proc_sys_reset_5_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_5/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_5_0/ULTRA96V2_proc_sys_reset_5_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_5/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_5_0/ULTRA96V2_proc_sys_reset_5_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_5/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_6_0/ULTRA96V2_proc_sys_reset_6_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_6/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_6_0/ULTRA96V2_proc_sys_reset_6_0_board.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_6/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_6_0/ULTRA96V2_proc_sys_reset_6_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_6/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_proc_sys_reset_6_0/ULTRA96V2_proc_sys_reset_6_0.xdc] for cell 'ULTRA96V2_i/proc_sys_reset_6/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc]
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/constrs_1/imports/ULTRA96V2/ultra96v2_oob.xdc]
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0_clocks.xdc] for cell 'ULTRA96V2_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_axi_intc_0_0/ULTRA96V2_axi_intc_0_0_clocks.xdc] for cell 'ULTRA96V2_i/axi_intc_0/U0'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_0/ULTRA96V2_auto_ds_0_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_0/ULTRA96V2_auto_ds_0_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_1/ULTRA96V2_auto_ds_1_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_1/ULTRA96V2_auto_ds_1_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_2/ULTRA96V2_auto_ds_2_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_2/ULTRA96V2_auto_ds_2_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_3/ULTRA96V2_auto_ds_3_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_3/ULTRA96V2_auto_ds_3_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_4/ULTRA96V2_auto_ds_4_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_4/ULTRA96V2_auto_ds_4_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_5/ULTRA96V2_auto_ds_5_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_5/ULTRA96V2_auto_ds_5_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_6/ULTRA96V2_auto_ds_6_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_6/ULTRA96V2_auto_ds_6_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_7/ULTRA96V2_auto_ds_7_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_7/ULTRA96V2_auto_ds_7_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst'
+Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_8/ULTRA96V2_auto_ds_8_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.srcs/sources_1/bd/ULTRA96V2/ip/ULTRA96V2_auto_ds_8/ULTRA96V2_auto_ds_8_clocks.xdc] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m07_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m08_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'ULTRA96V2_i/ps8_0_axi_periph/m09_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell ULTRA96V2_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell ULTRA96V2_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell ULTRA96V2_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell ULTRA96V2_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24742 ; free virtual = 61981
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 68 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 5 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 63 instances
+
+56 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:00 . Memory (MB): peak = 3974.691 ; gain = 2366.957 ; free physical = 24742 ; free virtual = 61981
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24732 ; free virtual = 61971
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1b025c7dd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24702 ; free virtual = 61943
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 54 inverter(s) to 4696 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 140bb31f5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+INFO: [Opt 31-389] Phase Retarget created 47 cells and removed 465 cells
+INFO: [Opt 31-1021] In phase Retarget, 370 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 12fa014d1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24584 ; free virtual = 61825
+INFO: [Opt 31-389] Phase Constant propagation created 298 cells and removed 2121 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 366 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: fb05a897
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 5583 cells
+INFO: [Opt 31-1021] In phase Sweep, 1019 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: fb05a897
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: fb05a897
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 99e141aa
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 447 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              47  |             465  |                                            370  |
+|  Constant propagation         |             298  |            2121  |                                            366  |
+|  Sweep                        |               0  |            5583  |                                           1019  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               2  |                                            447  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+Ending Logic Optimization Task | Checksum: fe0a6858
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3974.691 ; gain = 0.000 ; free physical = 24582 ; free virtual = 61823
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=5.644 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: 1f83feb6c
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23891 ; free virtual = 61269
+Ending Power Optimization Task | Checksum: 1f83feb6c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 4913.254 ; gain = 938.562 ; free physical = 23924 ; free virtual = 61301
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: eb4a0952
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23936 ; free virtual = 61313
+Ending Final Cleanup Task | Checksum: eb4a0952
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23935 ; free virtual = 61313
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23935 ; free virtual = 61313
+Ending Netlist Obfuscation Task | Checksum: eb4a0952
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23935 ; free virtual = 61313
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 4913.254 ; gain = 938.562 ; free physical = 23935 ; free virtual = 61313
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23914 ; free virtual = 61292
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23901 ; free virtual = 61284
+INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23896 ; free virtual = 61285
+INFO: [runtcl-4] Executing : report_drc -file ULTRA96V2_wrapper_drc_opted.rpt -pb ULTRA96V2_wrapper_drc_opted.pb -rpx ULTRA96V2_wrapper_drc_opted.rpx
+Command: report_drc -file ULTRA96V2_wrapper_drc_opted.rpt -pb ULTRA96V2_wrapper_drc_opted.pb -rpx ULTRA96V2_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23878 ; free virtual = 61268
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: db7024fb
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23878 ; free virtual = 61268
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23878 ; free virtual = 61268
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 135a529a4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23867 ; free virtual = 61262
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1655a64cc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23825 ; free virtual = 61221
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1655a64cc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23825 ; free virtual = 61221
+Phase 1 Placer Initialization | Checksum: 1655a64cc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23825 ; free virtual = 61222
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1c33f61e8
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23781 ; free virtual = 61179
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 980 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 291 nets or cells. Created 0 new cell, deleted 291 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23771 ; free virtual = 61170
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            291  |                   291  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            291  |                   291  |           0  |           3  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: e2a2b87d
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:27 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23769 ; free virtual = 61167
+Phase 2.2 Global Placement Core | Checksum: 9ba899f3
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:27 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23767 ; free virtual = 61166
+Phase 2 Global Placement | Checksum: 9ba899f3
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:27 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23778 ; free virtual = 61178
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1756f2c7b
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:28 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23773 ; free virtual = 61172
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2b74d64c
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:29 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23774 ; free virtual = 61173
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: fee4902b
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:29 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23774 ; free virtual = 61173
+
+Phase 3.4 Small Shape DP
+
+Phase 3.4.1 Small Shape Clustering
+Phase 3.4.1 Small Shape Clustering | Checksum: 65d4c2cd
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:30 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23752 ; free virtual = 61152
+
+Phase 3.4.2 Flow Legalize Slice Clusters
+Phase 3.4.2 Flow Legalize Slice Clusters | Checksum: 953511d8
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:30 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23751 ; free virtual = 61151
+
+Phase 3.4.3 Slice Area Swap
+Phase 3.4.3 Slice Area Swap | Checksum: d4d565b2
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:32 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23740 ; free virtual = 61140
+
+Phase 3.4.4 Commit Slice Clusters
+Phase 3.4.4 Commit Slice Clusters | Checksum: 1634a67a0
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:33 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23737 ; free virtual = 61137
+Phase 3.4 Small Shape DP | Checksum: 1634a67a0
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:33 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23744 ; free virtual = 61144
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 16c96592a
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:34 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23744 ; free virtual = 61144
+
+Phase 3.6 Pipeline Register Optimization
+Phase 3.6 Pipeline Register Optimization | Checksum: 1401ad475
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:34 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23745 ; free virtual = 61145
+Phase 3 Detail Placement | Checksum: 1401ad475
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:35 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23745 ; free virtual = 61145
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 186e88b7f
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-35] Processed net ULTRA96V2_i/rst_ps8_0_100M/U0/peripheral_aresetn[0], inserted BUFG to drive 2939 loads.
+INFO: [Place 46-45] Replicated bufg driver ULTRA96V2_i/rst_ps8_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 21cedc6bc
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:39 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23747 ; free virtual = 61147
+INFO: [Place 30-746] Post Placement Timing Summary WNS=4.542. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2392f3da1
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:39 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23747 ; free virtual = 61147
+Phase 4.1 Post Commit Optimization | Checksum: 2392f3da1
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:39 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23747 ; free virtual = 61147
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2392f3da1
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:39 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23749 ; free virtual = 61149
+Netlist sorting complete. Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.28 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61142
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 32dce423e
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:41 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61143
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61143
+Phase 4.4 Final Placement Cleanup | Checksum: 2bd442fbc
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:42 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61143
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2bd442fbc
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:42 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61143
+Ending Placer Task | Checksum: 24b5d02f6
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:42 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61143
+INFO: [Common 17-83] Releasing license: Implementation
+120 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:42 ; elapsed = 00:00:45 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23786 ; free virtual = 61186
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23786 ; free virtual = 61186
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23727 ; free virtual = 61166
+INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file ULTRA96V2_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.17 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23761 ; free virtual = 61174
+INFO: [runtcl-4] Executing : report_utilization -file ULTRA96V2_wrapper_utilization_placed.rpt -pb ULTRA96V2_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ULTRA96V2_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23770 ; free virtual = 61183
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+130 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23743 ; free virtual = 61157
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23683 ; free virtual = 61136
+INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_physopt.dcp' has been generated.
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: e0d2e204 ConstDB: 0 ShapeSum: 75eb1c55 RouteDB: f49f049d
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 13b4a80ef
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23571 ; free virtual = 61000
+Post Restoration Checksum: NetGraph: 8e2399a5 NumContArr: f05200b0 Constraints: ea3b400d Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 268b0da62
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23573 ; free virtual = 61002
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 268b0da62
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23529 ; free virtual = 60958
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 268b0da62
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23529 ; free virtual = 60958
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 1dfab8050
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23514 ; free virtual = 60944
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 2c8b6de7b
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:25 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23483 ; free virtual = 60913
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.705  | TNS=0.000  | WHS=-0.047 | THS=-11.678|
+
+Phase 2 Router Initialization | Checksum: 2429b89af
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:28 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23482 ; free virtual = 60912
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 24689
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 18208
+  Number of Partially Routed Nets     = 6481
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 2b8d561b4
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:31 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23503 ; free virtual = 60933
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 5162
+ Number of Nodes with overlaps = 434
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.541  | TNS=0.000  | WHS=-0.026 | THS=-0.074 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2391ecac3
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:41 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23516 ; free virtual = 60946
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.541  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 25e2f118c
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:42 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23514 ; free virtual = 60944
+Phase 4 Rip-up And Reroute | Checksum: 25e2f118c
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:42 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23514 ; free virtual = 60944
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 262d4b606
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:44 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23512 ; free virtual = 60943
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.541  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 262d4b606
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:44 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23512 ; free virtual = 60943
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 262d4b606
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:44 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23512 ; free virtual = 60943
+Phase 5 Delay and Skew Optimization | Checksum: 262d4b606
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:44 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23512 ; free virtual = 60943
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 19d51560d
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:46 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23508 ; free virtual = 60938
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.541  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2892d8ef2
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:46 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23508 ; free virtual = 60938
+Phase 6 Post Hold Fix | Checksum: 2892d8ef2
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:46 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23508 ; free virtual = 60938
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.68428 %
+  Global Horizontal Routing Utilization  = 4.43689 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 25ffab48c
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:46 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23508 ; free virtual = 60938
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 25ffab48c
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:46 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23506 ; free virtual = 60936
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 25ffab48c
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:48 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23505 ; free virtual = 60935
+
+Phase 10 Route finalize
+Phase 10 Route finalize | Checksum: 25ffab48c
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:48 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23506 ; free virtual = 60937
+
+Phase 11 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=3.566  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 11 Post Router Timing | Checksum: 20a7d8348
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:50 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23502 ; free virtual = 60932
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:50 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23653 ; free virtual = 61083
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+147 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:58 ; elapsed = 00:00:53 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23653 ; free virtual = 61083
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23653 ; free virtual = 61083
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23581 ; free virtual = 61060
+INFO: [Common 17-1381] The checkpoint '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ULTRA96V2_wrapper_drc_routed.rpt -pb ULTRA96V2_wrapper_drc_routed.pb -rpx ULTRA96V2_wrapper_drc_routed.rpx
+Command: report_drc -file ULTRA96V2_wrapper_drc_routed.rpt -pb ULTRA96V2_wrapper_drc_routed.pb -rpx ULTRA96V2_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file ULTRA96V2_wrapper_methodology_drc_routed.rpt -pb ULTRA96V2_wrapper_methodology_drc_routed.pb -rpx ULTRA96V2_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file ULTRA96V2_wrapper_methodology_drc_routed.rpt -pb ULTRA96V2_wrapper_methodology_drc_routed.pb -rpx ULTRA96V2_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/ULTRA96V2_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file ULTRA96V2_wrapper_power_routed.rpt -pb ULTRA96V2_wrapper_power_summary_routed.pb -rpx ULTRA96V2_wrapper_power_routed.rpx
+Command: report_power -file ULTRA96V2_wrapper_power_routed.rpt -pb ULTRA96V2_wrapper_power_summary_routed.pb -rpx ULTRA96V2_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+159 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23574 ; free virtual = 61034
+INFO: [runtcl-4] Executing : report_route_status -file ULTRA96V2_wrapper_route_status.rpt -pb ULTRA96V2_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file ULTRA96V2_wrapper_timing_summary_routed.rpt -pb ULTRA96V2_wrapper_timing_summary_routed.pb -rpx ULTRA96V2_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ULTRA96V2_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ULTRA96V2_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ULTRA96V2_wrapper_bus_skew_routed.rpt -pb ULTRA96V2_wrapper_bus_skew_routed.pb -rpx ULTRA96V2_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force ULTRA96V2_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 447 net(s) have no routable loads. The problem bus(es) and/or net(s) are ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m05_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ULTRA96V2_i/ps8_0_axi_periph/m06_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i... and (the first 15 of 207 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ULTRA96V2_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] '/home/saido/sources/Avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_2/ULTRA96V2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Jun 26 20:11:30 2020. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+179 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 4913.254 ; gain = 0.000 ; free physical = 23531 ; free virtual = 61003
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 20:11:30 2020...
