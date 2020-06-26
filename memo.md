@@ -123,7 +123,7 @@ zcu104のAI向けのベースHWプラットフォームのソースが[githubの
 |  6 | 600 MHz           |
 
 
-AXIインターコネクトに関しては、一つのDPUの対して制御用の`HPC#`が1本とデータ用の`HP#`が2本必要になる(多分)。ただし、通常のVivadoと同様に共有は可能になっているので重複して指定することも可能らしい。  
+AXIインターコネクトに関しては、一つのDPUの対してキャッシュ付きの`HPC#`が1本とキャッシュ無しの`HP#`が2本必要になる(詳細はよくわかっていない)。ただし、通常のVivadoと同様に共有は可能になっているので重複して指定することも可能らしい。  
 Vitisからは`sptag`というものでアクセスする。今回は以下のようになっていると思う。
 
 |      name      | sptag |
@@ -372,7 +372,7 @@ source ./compile_cf_model.sh densebox cf_densebox_wider_360_640_1.11G
 
 # なんとなくtf_yolov3_vocもコンパイルしてみる
 conda activate vitis-ai-tensorflow
-source ./compile_tf_model.sh yolov3_voc tf_yolov3_voc_416_416_65.63G
+source ./compile_tf_model.sh tf_yolov3_voc tf_yolov3_voc_416_416_65.63G
 
 # Docker環境でやることは以上で終わりなので、他に用がなければexitやCTRL-Dで抜ける
 # ※次のフローからはホスト上で行う。
@@ -499,13 +499,13 @@ cp -r ~/Downloads/vitis-ai_v1.1_dnndk sdcard/runtime/.
 
 * さっき作ったSDカード
 * ultra96v2ボードと適当な電源
-* [Ultra96 USB-to-JTAG/UART Pod](https://www.avnet.com/shop/japan/products/avnet-engineering-services/aes-acc-u96-jtag-3074457345636446168/)
+* [Ultra96 USB-to-JTAG/UART Pod](https://www.avnet.com/shop/japan/products/avnet-engineering-services/aes-acc-u96-jtag-3074457345636446168/)とMicroUSBケーブルとホストPC
 * Mini Displayport経由で映るモニタ(今回は適当なVGA変換アダプタを使用; アダプタにより相性があるかもしれない)
 * USB Webカメラ(今回はLogicool C615nを使用)
 * (USBマウスとUSBキーボード)
 
 
-上記を全部接続して、電源ボタンを押して起動したらUARTで起動ログなどが表示される。また、ディスプレイにchromiumの画面が表示されているはず。
+上記を全部接続して、電源ボタンを押して起動したらUARTで起動ログなどが表示される。また、ディスプレイにchromiumの画面が表示されているはず。(Matchboxの画面)
 ユーザ名`root`、パスワード`root`でログイン。
 
 まずはDNNDKの実行環境などを準備する。今回、rootfsをSDカード上に作成しているのでこの操作は一回だけ実行すればよい。
