@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Jun 18 12:09:07 2020
+| Date         : Sun Jun 28 00:12:49 2020
 | Host         : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_accelerator_utilization -kernels { dpu_xrt_top:ULTRA96V2_i/dpu_xrt_top_1/inst:dpu_xrt_top_1} -file ../../../output/kernel_util_synthed.rpt -name kernel_util_synthed -json
 | Design       : ULTRA96V2_wrapper

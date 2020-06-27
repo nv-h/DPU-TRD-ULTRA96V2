@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Jun 18 11:57:07 2020
+| Date         : Sun Jun 28 00:00:43 2020
 | Host         : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file ULTRA96V2_auto_pc_9_utilization_synth.rpt -pb ULTRA96V2_auto_pc_9_utilization_synth.pb
 | Design       : ULTRA96V2_auto_pc_9

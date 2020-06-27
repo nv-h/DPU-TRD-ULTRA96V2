@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date              : Thu Jun 18 12:51:57 2020
+| Date              : Sun Jun 28 00:56:34 2020
 | Host              : saido-Lin running 64-bit Ubuntu 18.04.4 LTS
 | Command           : report_timing_summary -max_paths 10 -file ULTRA96V2_wrapper_timing_summary_routed.rpt -pb ULTRA96V2_wrapper_timing_summary_routed.pb -rpx ULTRA96V2_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design            : ULTRA96V2_wrapper
