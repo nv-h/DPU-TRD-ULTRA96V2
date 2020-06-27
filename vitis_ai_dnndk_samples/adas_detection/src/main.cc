@@ -319,7 +319,7 @@ int main(const int argc, const char** argv) {
     dpuOpen();
 
     /* Load DPU Kernels for YOLO-v3 network model */
-    DPUKernel *kernel = dpuLoadKernel("yolo");
+    DPUKernel *kernel = dpuLoadKernel("dk_yolov3_cityscapes"); // コンパイル時のモデル名に合わせる。
     vector<DPUTask *> task(4);
 
     /* Create 4 DPU Tasks for YOLO-v3 network model */

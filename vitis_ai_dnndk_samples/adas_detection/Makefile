@@ -37,7 +37,7 @@ OBJ    +=   $(patsubst %.cpp, %.o, $(notdir $(CPP_DIR)))
 OBJ    +=   dputils.o
 
 CFLAGS +=  -mcpu=cortex-a53
-MODEL = $(CUR_DIR)/model/dpu_yolo.elf
+MODEL = $(CUR_DIR)/model/dpu_dk_yolov3_cityscapes.elf
 
 SRC     =   $(CUR_DIR)/src
 SRC_DPUTILS = $(shell cd ../common/; pwd)

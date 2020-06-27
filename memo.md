@@ -540,3 +540,133 @@ cd /run/media/mmcblk0p1/vitis_ai_dnndk_samples/face_detection
 [DPU-PYNQのエッジサンプル](https://github.com/Xilinx/DPU-PYNQ/tree/master/pynq_dpu/edge/notebooks)を見るとn2cubeの使い方がなんとなくわかるかも。
 
 
+# `adas_detection`のデモを動かす
+
+もと記事には書いてない内容だが、カメラ入力を高速に検知したいので、参考に`adas_detection`を動かしてみたい。
+
+`dk_yolov3_cityscapes_256_512_0.9_5.46G`を使うらしいが、`quantized/deploy.prototxt`の修正が必要。
+修正前は以下のようなエラーになる。
+
+```
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format caffe.NetParameter: 7:16: Message type "caffe.TransformationParameter" has no field named "yolo_height".
+[VAI_C][Error] Open prototxt file failed: /Downloads/all_models_1.1/dk_yolov3_cityscapes_256_512_0.9_5.46G/quantized/deploy.prototxt
+```
+`quantized/deploy.prototxt`は、余計な情報をコメントアウトする修正が必要らしい。
+参考: https://forums.xilinx.com/t5/AI-and-Vitis-AI/Error-while-compiling-quantized-models/td-p/1066419
+
+```diff
+--- all_models_1.1/dk_yolov3_cityscapes_256_512_0.9_5.46G/quantized/deploy.prototxt	Sun Jun 28 01:15:11 2020
++++ all_models_1.1/dk_yolov3_cityscapes_256_512_0.9_5.46G/quantized/deploy.prototxt.orig	Sun Jun 28 01:20:26 2020
+@@ -2,11 +2,11 @@
+   name: "data"
+   type: "Input"
+   top: "data"
+-  transform_param {
+-    mirror: false
+-    yolo_height: 256
+-    yolo_width: 512
+-  }
++#  transform_param {
++#    mirror: false
++#    yolo_height: 256
++#    yolo_width: 512
++#  }
+   input_param {
+     shape {
+       dim: 1
+```
+
+修正後、以下でコンパイルできる。モデル名は、デモのソースファイルでは`yolo`になっているが、混ざりそうで嫌なので`dk_yolov3_cityscapes`とした。
+
+```sh
+source ./compile_cf_model.sh dk_yolov3_cityscapes dk_yolov3_cityscapes_256_512_0.9_5.46G
+```
+
+以下のようにコンパイルできる。レイヤ構成も`adas_detection/src/main.cc`と一致している模様。
+
+```
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
+
+Kernel topology "dk_yolov3_cityscapes_kernel_graph.jpg" for network "dk_yolov3_cityscapes"
+kernel list info for network "dk_yolov3_cityscapes"
+                               Kernel ID : Name
+                                       0 : dk_yolov3_cityscapes
+
+                             Kernel Name : dk_yolov3_cityscapes
+--------------------------------------------------------------------------------
+                             Kernel Type : DPUKernel
+                               Code Size : 0.31MB
+                              Param Size : 2.24MB
+                           Workload MACs : 5469.90MOPS
+                         IO Memory Space : 2.95MB
+                              Mean Value : 0, 0, 0,
+                      Total Tensor Count : 93
+                Boundary Input Tensor(s)   (H*W*C)
+                               data:0(0) : 256*512*3
+
+               Boundary Output Tensor(s)   (H*W*C)
+                       layer81_conv:0(0) : 8*16*40
+                       layer93_conv:0(1) : 16*32*40
+                      layer105_conv:0(2) : 32*64*40
+                      layer117_conv:0(3) : 64*128*40
+
+                        Total Node Count : 92
+                           Input Node(s)   (H*W*C)
+                          layer0_conv(0) : 256*512*3
+
+                          Output Node(s)   (H*W*C)
+                         layer81_conv(0) : 8*16*40
+                         layer93_conv(0) : 16*32*40
+                        layer105_conv(0) : 32*64*40
+                        layer117_conv(0) : 64*128*40
+
+
+
+```
+
+モデル名を変更したことにより、以下の二つを変更する必要がある。
+
+```diff
+diff --git a/vitis_ai_dnndk_samples/adas_detection/Makefile b/vitis_ai_dnndk_samples/adas_detection/Makefile
+index bc073b7..5313424 100755
+--- a/vitis_ai_dnndk_samples/adas_detection/Makefile
++++ b/vitis_ai_dnndk_samples/adas_detection/Makefile
+@@ -37,7 +37,7 @@ OBJ    +=   $(patsubst %.cpp, %.o, $(notdir $(CPP_DIR)))
+ OBJ    +=   dputils.o
+ 
+ CFLAGS +=  -mcpu=cortex-a53
+-MODEL = $(CUR_DIR)/model/dpu_yolo.elf
++MODEL = $(CUR_DIR)/model/dpu_dk_yolov3_cityscapes.elf
+ 
+ SRC     =   $(CUR_DIR)/src
+ SRC_DPUTILS = $(shell cd ../common/; pwd)
+diff --git a/vitis_ai_dnndk_samples/adas_detection/src/main.cc b/vitis_ai_dnndk_samples/adas_detection/src/main.cc
+index b57221e..f8c8ab9 100755
+--- a/vitis_ai_dnndk_samples/adas_detection/src/main.cc
++++ b/vitis_ai_dnndk_samples/adas_detection/src/main.cc
+@@ -319,7 +319,7 @@ int main(const int argc, const char** argv) {
+     dpuOpen();
+ 
+     /* Load DPU Kernels for YOLO-v3 network model */
+-    DPUKernel *kernel = dpuLoadKernel("yolo");
++    DPUKernel *kernel = dpuLoadKernel("dk_yolov3_cityscapes"); // コンパイル時のモデル名に合わせる。
+     vector<DPUTask *> task(4);
+ 
+     /* Create 4 DPU Tasks for YOLO-v3 network model */
+```
+
+これでコンパイルができるはず。以下でコンパイル。
+
+```sh
+mkdir vitis_ai_dnndk_samples/adas_detection/model
+cp modelzoo/compiled_output/dk_yolov3_cityscapes_256_512_0.9_5.46G/dpu_dk_yolov3_cityscapes.elf vitis_ai_dnndk_samples/adas_detection/model/
+cd vitis_ai_dnndk_samples/adas_detection
+make
+```
+
+
